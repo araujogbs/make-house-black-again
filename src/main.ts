@@ -1,0 +1,24 @@
+import '@fontsource/anton/latin-400.css';
+import '@fontsource/archivo/latin-400.css';
+import '@fontsource/archivo/latin-500.css';
+import '@fontsource/archivo/latin-700.css';
+import '@fontsource/ibm-plex-mono/latin-400.css';
+import '@fontsource/ibm-plex-mono/latin-500.css';
+import './style.css';
+import { $ } from './event';
+import { startCountdown } from './countdown';
+import { paintGrain } from './grain';
+import { setupVideos } from './media';
+import { setupReveal } from './reveal';
+import { setupMotion, setupScrollState } from './scroll';
+import { setupSignup } from './signup';
+import { setupWall } from './wall';
+
+startCountdown();
+setupVideos();
+setupWall();
+setupSignup();
+paintGrain($('.grain'));
+setupScrollState();
+setupReveal();
+setupMotion();

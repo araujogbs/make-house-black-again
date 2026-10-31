@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MHBA · Make House Black Again · 22.11.2026, São Paulo</title>
+<meta name="description" content="MHBA – Make House Black Again. Um movimento que resgata as raízes negras da house music. 1ª edição: domingo, 22 de novembro de 2026, das 12h às 21h, em São Paulo.">
+<meta name="theme-color" content="#0a0a0a">
+<!-- VITE_SITE_URL (arquivo .env) deve ser o domínio final, sem barra no fim: os links de compartilhamento precisam de endereço absoluto -->
+<link rel="canonical" href="%VITE_SITE_URL%/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="MHBA">
+<meta property="og:title" content="MHBA · Make House Black Again">
+<meta property="og:description" content="A música eletrônica sempre foi preta. 1ª edição: 22.11.2026, das 12h às 21h, em São Paulo.">
+<meta property="og:url" content="%VITE_SITE_URL%/">
+<meta property="og:image" content="%VITE_SITE_URL%/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="MHBA, Make House Black Again. 1ª edição, São Paulo, 22.11.2026">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" as="image" href="/img/hero-still.jpg">
+<!-- fontes do topo chegam antes da primeira pintura, para o hero não "pular" na troca de fonte -->
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/node_modules/@fontsource/anton/files/anton-latin-400-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="/node_modules/@fontsource/archivo/files/archivo-latin-700-normal.woff2">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicEvent",
+  "name": "MHBA · Make House Black Again · 1ª edição",
+  "description": "Um movimento que resgata e valoriza as raízes negras da música eletrônica, especialmente da house music.",
+  "startDate": "2026-11-22T12:00:00-03:00",
+  "endDate": "2026-11-22T21:00:00-03:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "location": {
+    "@type": "Place",
+    "name": "São Paulo",
+    "address": { "@type": "PostalAddress", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" }
+  },
+  "image": ["%VITE_SITE_URL%/img/og.jpg", "%VITE_SITE_URL%/img/post-6.jpg"],
+  "organizer": { "@type": "Organization", "name": "Vulto" }
+}
+</script>
+</head>
+<body>
+<a class="skip mono" href="#manifesto">Pular para o conteúdo</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="bar">
+  <a class="logo" href="#topo" aria-label="MHBA, voltar ao topo">MHBA</a>
+  <a class="mono bar-cta" href="#contest">Contest Warmup</a>
+</header>
+
+<main>
+  <!-- HERO -->
+  <div class="hero" id="topo">
+    <video class="hero-bg" data-bg src="img/hero.mp4" poster="img/hero-still.jpg" width="540" height="450" autoplay muted loop playsinline disablepictureinpicture aria-hidden="true"></video>
+   <div class="wrap">
+    <div class="eyebrow mono"><span>1ª edição</span><span>São Paulo</span><span>Dom · 22 nov 2026</span></div>
+    <h1 class="title">
+      <span class="mhba display">MHBA</span>
+      <span class="sub">Make House Black Again</span>
+    </h1>
+
+    <div class="count" role="timer" aria-label="Contagem regressiva até 22 de novembro de 2026, 12h">
+      <div class="count-head">
+        <span class="live mono"><span class="dot" aria-hidden="true"></span><span id="countLabel">Faltam para o primeiro kick</span></span>
+        <span class="mono muted">124 BPM · horário de Brasília</span>
+      </div>
+      <div class="timer" id="timer">
+        <div class="unit"><div class="num" data-u="d"></div><div class="lbl mono">dias</div></div>
+        <span class="sep" aria-hidden="true">:</span>
+        <div class="unit"><div class="num" data-u="h"></div><div class="lbl mono">horas</div></div>
+        <span class="sep" aria-hidden="true">:</span>
+        <div class="unit"><div class="num" data-u="m"></div><div class="lbl mono">minutos</div></div>
+        <span class="sep" aria-hidden="true">:</span>
+        <div class="unit"><div class="num" data-u="s"></div><div class="lbl mono">segundos</div></div>
+      </div>
+      <div class="count-done" id="countDone" hidden></div>
+      <div class="when mono muted">
+        <span><b>22 de novembro</b> · domingo</span>
+        <span><b>12h às 21h</b></span>
+      </div>
+      <a class="cue mono" href="#manifesto">Desça para conhecer <i aria-hidden="true">↓</i></a>
+    </div>
+   </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>A música eletrônica sempre foi preta ✦</span><span>Make House Black Again ✦</span><span>Origem não se apaga ✦</span><span>Resistência em frequência ✦</span>
+      <span>A música eletrônica sempre foi preta ✦</span><span>Make House Black Again ✦</span><span>Origem não se apaga ✦</span><span>Resistência em frequência ✦</span>
+    </div>
+  </div>
+
+  <!-- MANIFESTO -->
+  <section class="manifesto" id="manifesto">
+    <div class="wrap">
+      <div class="kicker mono">O manifesto</div>
+      <p class="big display" id="bigWords">A música eletrônica sempre foi <span class="red">preta</span>.</p>
+      <div class="manifesto-grid">
+        <div class="rv">
+          <p class="lede">Make House Black Again é um movimento que resgata e valoriza as <strong>raízes negras da música eletrônica</strong>, especialmente da House Music.</p>
+          <p class="lede muted">Preservamos a memória de quem abriu os caminhos e reforçamos a importância da representatividade, da diversidade e do respeito às raízes da cena.</p>
+        </div>
+        <figure class="rv zoom"><img class="poster" src="img/post-1.jpg" width="1080" height="1350" alt="Pista lotada em clube dos anos 70, com o texto 'A música eletrônica sempre foi preta'" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORIGEM -->
+  <section class="origin" id="origem">
+    <div class="wrap origin-grid">
+      <div class="sticky">
+        <div class="kicker mono">Contexto histórico</div>
+        <h2 class="h2 display rv">Tem cor, CEP e história</h2>
+        <figure class="rv zoom" style="margin:24px 0 0"><img class="poster" src="img/post-2.jpg" width="1080" height="1350" alt="Rua de Chicago nos anos 70 em preto e branco" loading="lazy"></figure>
+      </div>
+      <div>
+        <p class="lede rv">A House Music nasce da necessidade de criar um lar fora de casa. No subsolo do clube <strong>The Warehouse</strong>, em Chicago, comunidades negras, latinas, periféricas e LGBTQIAPN+ transformaram a exclusão em família.</p>
+        <ol class="tl">
+          <li class="rv">
+            <div class="yr">Anos 80</div>
+            <div><h3>Chicago, The Warehouse</h3><p>Groove, grave, vocais e autoexpressão. Em meio à epidemia de HIV, a pista vira abrigo para quem não tinha lugar em outro canto.</p></div>
+          </li>
+          <li class="rv">
+            <div class="yr">1990</div>
+            <div><h3>O gênero chega ao Top 100 da Billboard</h3><p>“Pump Up the Jam”, do Technotronic, leva o house para as paradas, carregando consigo quem fez a cena acontecer.</p></div>
+          </li>
+          <li class="rv">
+            <div class="yr">Hoje</div>
+            <div><h3>São Paulo constrói a própria referência</h3><p>Comparada a Berlim, SP cria sua cena a partir da própria cultura, da geografia e da necessidade de espaços acessíveis. Festas que viraram referência nasceram do coletivo e da comunidade LGBTQIAPN+.</p>
+              <div class="tags mono"><span class="tag">Nova Affair</span><span class="tag">Mamba Negra</span><span class="tag">Gop Tun</span></div></div>
+          </li>
+          <li class="rv now">
+            <div class="yr">22.11.26</div>
+            <div><h3>MHBA, 1ª edição</h3><p>A história contada por quem a escreveu, viveu e a mantém viva.</p></div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERDIDO -->
+  <section class="lost" id="dados">
+    <div class="wrap">
+      <div class="kicker mono">Uma parte da história se perdeu</div>
+      <h2 class="h2 display rv">A contribuição negra foi apagada da pista</h2>
+      <div class="stats">
+        <div class="stat rv">
+          <div class="n"><span data-count="63.6" data-dec="1">63,6</span><small>%</small></div>
+          <div class="meter"><i style="--v:63.6%"></i></div>
+          <p>acreditam que esses espaços não são acessíveis a pessoas negras.</p>
+        </div>
+        <div class="stat rv">
+          <div class="n"><span data-count="81.8" data-dec="1">81,8</span><small>%</small></div>
+          <div class="meter"><i style="--v:81.8%"></i></div>
+          <p>acreditam que esses eventos não são financeiramente acessíveis.</p>
+        </div>
+      </div>
+      <p class="lede rv" style="margin-top:36px">Ingresso caro, localização e estrutura afastam justamente quem criou a cena. <strong>Esses espaços precisam acolher seus criadores.</strong></p>
+      <p class="src mono">Fonte: pesquisa MHBA</p>
+    </div>
+  </section>
+
+  <!-- VOZES -->
+  <section class="voices" id="vozes">
+    <div class="wrap">
+      <div class="kicker mono">Existe um sentimento ambíguo</div>
+      <h2 class="h2 display rv">Quem está na pista fala</h2>
+      <div class="quotes">
+        <blockquote class="q q-big rv"><p>Muitas vezes não se sentem confortáveis também pelo fato de 90% das pessoas presentes no rolê serem brancas, assim como me sinto extremamente desconfortável quando olho pro lado e não vejo nenhuma pessoa trans.</p><cite class="mono">Resposta anônima · pesquisa MHBA</cite></blockquote>
+        <blockquote class="q rv"><p>Acho que ainda é uma cena muito frequentada por pessoas brancas, o que pode acabar criando uma sensação de não pertencimento. Mas nas festas underground isso é diferente, é perceptível a presença de mais pessoas negras.</p><cite class="mono">Resposta anônima · pesquisa MHBA</cite></blockquote>
+        <blockquote class="q rv"><p>O valor dos ingressos possa impossibilitar a presença de muitas pessoas, assim como o local de realização das festas. Mas pra além disso, creio que uma possível falta do sentimento de pertencimento, comunidade e acolhimento seja um grande obstáculo.</p><cite class="mono">Resposta anônima · pesquisa MHBA</cite></blockquote>
+        <blockquote class="q rv"><p>Tenho muitos amigos que são pretos e que ainda têm a mente muito fechada nessa questão de musicalidade, sendo que o house em si veio da música disco!</p><cite class="mono">Resposta anônima · pesquisa MHBA</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- PISTA -->
+  <section class="pista" id="pista" style="padding-top:0">
+    <div class="wrap">
+      <div class="strip-head">
+        <div>
+          <div class="kicker mono">Quem faz o house acontecer?</div>
+          <h2 class="h2 display rv">Corpos que dançam para resistir</h2>
+        </div>
+        <span class="mono muted"><span class="hint-hover">Passe o mouse ou role para dar cor</span><span class="hint-touch">Role para dar cor</span></span>
+      </div>
+      <div class="gallery">
+        <img class="rv" src="img/pista-1.jpg" width="736" height="920" alt="Mulher dançando em pista com luz vermelha e globo espelhado" loading="lazy">
+        <img class="rv" src="img/pista-3.jpg" width="1179" height="1459" alt="DJ de óculos escuros mixando cercado pela pista" loading="lazy">
+        <img class="rv" src="img/pista-2.jpg" width="1200" height="940" alt="Grupo dançando junto em um clube iluminado de vermelho" loading="lazy">
+        <img class="rv" src="img/pista-6.jpg" width="736" height="982" alt="Mãos com anéis garimpando discos de vinil" loading="lazy">
+        <img class="rv" src="img/pista-4.jpg" width="736" height="1103" alt="Multidão em pista com luz roxa" loading="lazy">
+        <img class="rv" src="img/pista-5.jpg" width="1920" height="1280" alt="Performer com chapéu de franjas e óculos de LED sob luz vermelha" loading="lazy">
+        <img class="rv" src="img/pista-7.jpg" width="736" height="981" alt="Parede de vinis iluminada de vermelho" loading="lazy">
+        <img class="rv" src="img/pista-8.jpg" width="735" height="912" alt="Globo espelhado encostado num muro branco na rua" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTAZES -->
+  <section class="wall" id="cartazes">
+    <div class="wall-stage">
+      <div class="wall-info">
+        <div class="kicker mono">Lambe-lambe · origem não se apaga</div>
+        <h2 class="h2 display">Seis cartazes, um recado</h2>
+        <div class="wall-count display" aria-hidden="true"><span id="wallNum">01</span><span class="of">/06</span></div>
+        <p class="wall-cap mono" id="wallCap" aria-live="polite">Sempre foi preta</p>
+        <div class="wall-ctrl">
+          <div class="wall-ticks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <button class="wall-next mono" type="button"><span class="wall-next-label">Colar próximo cartaz</span><span class="arr" aria-hidden="true">→</span></button>
+        </div>
+      </div>
+      <div class="wall-board">
+        <figure class="lp" data-fx="drop" data-cap="Sempre foi preta"><img src="img/post-1.jpg" width="1080" height="1350" alt="Cartaz: A música eletrônica sempre foi preta" loading="lazy"></figure>
+        <figure class="lp" data-fx="wipe" data-cap="Cor, CEP e história"><img src="img/post-2.jpg" width="1080" height="1350" alt="Cartaz: A música eletrônica tem cor, CEP e história" loading="lazy"></figure>
+        <figure class="lp" data-fx="spot" data-cap="Origem não se apaga"><img src="img/post-3.jpg" width="1080" height="1350" alt="Cartaz: Origem não se apaga" loading="lazy"></figure>
+        <figure class="lp" data-fx="spin" data-cap="Resistência em frequência"><img src="img/post-4.jpg" width="1080" height="1350" alt="Cartaz: Resistência em frequência" loading="lazy"></figure>
+        <figure class="lp" data-fx="curtain" data-cap="Reparação histórica"><img src="img/post-5.jpg" width="1080" height="1350" alt="Cartaz: Reparação histórica" loading="lazy"></figure>
+        <figure class="lp" data-fx="flash" data-cap="Make House Black Again"><img src="img/post-6.jpg" width="1080" height="1350" alt="Cartaz: Make House Black Again" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILARES -->
+  <section id="pilares" style="padding-top:0">
+    <div class="wrap">
+      <div class="kicker mono">A MHBA se apoia em 3 pilares</div>
+      <div class="pillars">
+        <div class="pillar rv"><div class="display">Retomar</div><p>a história negra dentro da cena eletrônica e, principalmente, dentro da house music.</p></div>
+        <div class="pillar rv"><div class="display">Construir</div><p>espaços de entretenimento, discussão e fomento da cena de forma acessível.</p></div>
+        <div class="pillar rv"><div class="display">Preservar</div><p>a contribuição negra na cena e fomentá-la de forma independente.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUEM FAZ -->
+  <section class="lost" id="quem-faz">
+    <div class="wrap">
+      <div class="kicker mono">Quem está por trás</div>
+      <h2 class="h2 display rv">A história contada por quem a escreveu</h2>
+      <div class="crew">
+        <article class="person rv">
+          <img class="portrait" src="img/kaue.jpg" width="792" height="680" alt="Retrato de Kauê Henrique, de boné e barba" loading="lazy">
+          <span class="role mono">Produtor geral</span>
+          <h3 class="display" style="margin:0">Kauê Henrique</h3>
+          <p>Fundador da Vulto e produtor cultural em iniciativas de cultura negra desde 2012. Cofundou o Encontro Swag, que reuniu <span data-count="3000" data-sep=".">3.000</span> pessoas no Parque Ibirapuera, e trabalhou com KL Jay, Les Twins e Recayd Mob.</p>
+        </article>
+        <article class="person rv">
+          <img class="portrait" src="img/katatau.jpg" width="792" height="680" alt="Katatau DJ tocando de fone de ouvido" loading="lazy">
+          <span class="role mono">DJ e diretor de som</span>
+          <h3 class="display" style="margin:0">Katatau DJ</h3>
+          <p>Cofundador da Vulto, nascido e criado em Guarulhos. Veio do funk e do rap, aprendeu a tocar na pandemia e se apresenta desde 2022 com influências de funk, tribal e techno.</p>
+        </article>
+        <article class="person rv">
+          <img class="portrait" src="img/phs.jpg" width="792" height="680" alt="PHS de boné e corrente, olhando para baixo" loading="lazy">
+          <span class="role mono">DJ e consultor artístico</span>
+          <h3 class="display" style="margin:0">PHS</h3>
+          <p>Multiartista de 24 anos da Zona Leste de São Paulo. Começou no hip-hop e no trap em 2019 e se encontrou no house: groove, elegância e pista underground.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEST -->
+  <section class="contest" id="contest">
+    <div class="wrap contest-grid">
+      <figure class="rv zoom" style="margin:0"><img class="poster" src="img/contest.jpg" width="1024" height="1536" alt="Cartaz Contest Warmup MHBA, com uma multidão dançando" loading="lazy"></figure>
+      <div>
+        <div class="kicker mono">Abertura da pista</div>
+        <h2 class="h2 display rv">Contest Warmup</h2>
+        <p class="lede rv" style="color:inherit">Um DJ da comunidade abre a primeira edição da MHBA. Para participar:</p>
+        <ul class="reqs">
+          <li class="rv"><span class="mono">01</span><span>Ser uma pessoa negra ou LGBTQIAPN+</span></li>
+          <li class="rv"><span class="mono">02</span><span>Morar em São Paulo</span></li>
+          <li class="rv"><span class="mono">03</span><span>Enviar um set de house de até 1 hora no SoundCloud</span></li>
+        </ul>
+        <div class="signup">
+          <button class="signup-btn" id="signupBtn" type="button" aria-expanded="false" aria-controls="formBox"><span class="signup-label">Quero me inscrever</span><span class="arr" aria-hidden="true">→</span></button>
+          <a class="note mono" href="https://docs.google.com/forms/d/e/1FAIpQLSfmlf4DYSRo0AaLMFj4Vq45fYJSczTuP17FMpRbmaprT0vc3Q/viewform" target="_blank" rel="noopener">ou abrir o formulário em outra aba ↗</a>
+        </div>
+      </div>
+    </div>
+  <div class="wrap form-box" id="formBox" hidden>
+      <form class="cform" id="contestForm" novalidate>
+        <div class="cform-head">
+          <span class="mono">Inscrição · Warmup Contest</span>
+          <h3 class="display">Manda teu set</h3>
+        </div>
+        <div class="cform-grid">
+          <label class="fld" for="f-nome"><span class="mono">Nome artístico *</span>
+            <input id="f-nome" name="nome" type="text" autocomplete="nickname" required>
+            <small data-error="nome" aria-live="polite"></small></label>
+          <label class="fld" for="f-insta"><span class="mono">Instagram *</span>
+            <input id="f-insta" name="instagram" type="text" placeholder="@seuperfil" autocomplete="off" required>
+            <small data-error="instagram" aria-live="polite"></small></label>
+          <label class="fld" for="f-whats"><span class="mono">WhatsApp *</span>
+            <input id="f-whats" name="whatsapp" type="tel" placeholder="(11) 91234-5678" autocomplete="tel" required>
+            <small data-error="whatsapp" aria-live="polite"></small></label>
+          <label class="fld" for="f-sc"><span class="mono">Link do set no SoundCloud *</span>
+            <input id="f-sc" name="soundcloud" type="url" placeholder="soundcloud.com/seu-nome/set" inputmode="url" required>
+            <small data-error="soundcloud" aria-live="polite"></small></label>
+          <fieldset class="fld seg">
+            <legend class="mono">Tem experiência com XDJ/CDJ?</legend>
+            <div class="seg-opts">
+              <label for="f-xdj-s"><input id="f-xdj-s" type="radio" name="xdj" value="Sim"><span>Sim</span></label>
+              <label for="f-xdj-n"><input id="f-xdj-n" type="radio" name="xdj" value="Não"><span>Não</span></label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="cform-foot">
+          <button class="signup-btn" type="submit"><span>Enviar inscrição</span><span class="arr" aria-hidden="true">→</span></button>
+          <p class="mono cform-status" id="formStatus" aria-live="polite"></p>
+        </div>
+        <p class="cform-privacy">Seus dados são usados apenas para a seleção do Warmup Contest e para o contato sobre o resultado.</p>
+        <div class="cform-done" id="formDone" tabindex="-1" hidden>
+          <span class="mono">Recebido</span>
+          <h3 class="display">Inscrição enviada. Nos vemos na pista.</h3>
+          <p>Fica de olho no Instagram e no WhatsApp: o resultado do contest sai por lá.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <div class="drift">
+    <p class="sr-only">A história merece ser contada por quem a escreveu.</p>
+    <div class="row" data-dir="1" aria-hidden="true">A história merece ser contada ✦ A história merece ser contada ✦</div>
+    <div class="row o" data-dir="-1" aria-hidden="true">por quem a <em>escreveu</em> ✦ por quem a <em>escreveu</em> ✦ por quem a <em>escreveu</em></div>
+  </div>
+
+  <!-- EVENTO -->
+  <section id="evento">
+    <div class="wrap">
+      <div class="kicker mono">Save the date</div>
+      <h2 class="h2 display rv">Primeira edição</h2>
+      <p class="lede rv">O capítulo de uma história que deve ser contada por quem a escreveu, viveu e a mantém viva, mas teve sua versão apagada.</p>
+      <div class="event-photos">
+        <figure class="rv zoom"><img src="img/evento-1.jpg" width="1200" height="1199" alt="Mãos com pulseiras mexendo no mixer sob luz vermelha" loading="lazy"></figure>
+        <figure class="rv zoom"><img src="img/evento-2.jpg" width="1062" height="1264" alt="DJ com camiseta da Vulto tocando, em preto e branco" loading="lazy"></figure>
+      </div>
+      <div class="facts">
+        <div class="fact rv"><span class="mono">Data</span><span class="display">22.11</span><span class="muted">Domingo, 2026</span></div>
+        <div class="fact rv"><span class="mono">Horário</span><span class="display">12h–21h</span><span class="muted"><span data-count="9">9</span> horas de pista</span></div>
+        <div class="fact rv"><span class="mono">Local</span><span class="display">SP</span><span class="muted">Endereço revelado em breve</span></div>
+      </div>
+      <div class="mini rv">
+        <span class="mono muted">Faltam</span>
+        <span class="display" id="miniTimer">—</span>
+        <span class="mono muted">· merch exclusivo no dia</span>
+      </div>
+    </div>
+    <div class="tri rv">
+      <img src="img/tri-esquerda.jpg" width="1080" height="1350" alt="Silhueta com o texto Make House" loading="lazy">
+      <img src="img/tri-meio.jpg" width="1080" height="1350" alt="Save the date 22/11/2026" loading="lazy">
+      <img src="img/tri-direita.jpg" width="1080" height="1350" alt="Silhueta com o texto Black Again" loading="lazy">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <video class="foot-bg" data-bg src="img/footer.mp4" poster="img/footer-still.jpg" width="540" height="450" muted loop playsinline disablepictureinpicture preload="none" aria-hidden="true"></video>
+  <div class="wrap foot">
+    <p class="display" style="margin:0">Nos vemos na pista. 22.11.2026</p>
+    <div class="foot-side">
+      <a class="foot-ig mono" href="https://www.instagram.com/makehouseblackagainsp/" target="_blank" rel="noopener">@makehouseblackagainsp ↗</a>
+      <div class="mono muted">MHBA · Make House Black Again · 2026</div>
+    </div>
+  </div>
+  <p class="wrap credit">Desenvolvido por <a href="https://www.linkedin.com/in/gabriel-ara%C3%BAjo-a5a439277/" target="_blank" rel="noopener">Gabriel Araújo</a></p>
+</footer>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
