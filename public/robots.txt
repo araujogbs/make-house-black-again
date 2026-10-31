@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://makehouseblackagain.com.br/sitemap.xml
+Sitemap: https://makehouseblackagain.netlify.app/sitemap.xml
