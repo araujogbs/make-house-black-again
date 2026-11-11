@@ -1,0 +1,3 @@
+# Endereço antigo do Netlify → domínio próprio (mantém o caminho e funciona para links já compartilhados)
+https://makehouseblackagain.netlify.app/* https://makehouseblackagain.com.br/:splat 301!
+http://makehouseblackagain.netlify.app/*  https://makehouseblackagain.com.br/:splat 301!
