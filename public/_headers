@@ -1,7 +1,7 @@
 # Cabeçalhos HTTP aplicados pelo Netlify (e pelo Cloudflare Pages).
-# A CSP libera só o próprio site e o Google Forms, que recebe as inscrições do contest.
+# A CSP libera só o próprio site: nenhum script, fonte ou requisição de terceiros.
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self' https://docs.google.com https://*.google.com; form-action 'self' https://docs.google.com; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests
   Strict-Transport-Security: max-age=31536000
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY

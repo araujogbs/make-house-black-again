@@ -11,13 +11,11 @@ import { paintGrain } from './grain';
 import { setupVideos } from './media';
 import { setupReveal } from './reveal';
 import { setupMotion, setupScrollState } from './scroll';
-import { setupSignup } from './signup';
 import { setupWall } from './wall';
 
 startCountdown();
 setupVideos();
 setupWall();
-setupSignup();
 paintGrain($('.grain'));
 setupScrollState();
 setupReveal();

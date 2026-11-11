@@ -9,7 +9,7 @@ Site da 1ª edição da **MHBA**, movimento que resgata e valoriza as raízes ne
 - **Contagem regressiva** até o primeiro kick, que muda sozinha para "acontecendo agora" e "obrigado, pista" no dia.
 - **Mural de lambe-lambe interativo**: seis cartazes, cada um colado com uma animação própria (queda, rasgo, holofote, giro, cortina e flash).
 - **Animações ligadas à rolagem**: manifesto que acende palavra por palavra, faixas que deslizam em sentidos opostos, linha do tempo que se preenche e fotos que ganham cor.
-- **Inscrição do Warmup Contest** num formulário próprio, com validação, que envia direto para o Google Forms do evento.
+- **Local revelado e resultado do Warmup Contest**: cartazes de anúncio integrados às seções, com link para o mapa.
 - Respeita **movimento reduzido**: sem animações, o site continua completo, com imagens estáticas.
 
 ## Qualidade
@@ -38,7 +38,6 @@ src/
 ├── wall.ts        mural de lambe-lambe
 ├── scroll.ts      animações ligadas à rolagem
 ├── reveal.ts      entrada das seções e números que contam
-├── signup.ts      formulário do contest → Google Forms
 ├── media.ts       vídeos de fundo
 ├── grain.ts       textura de granulado
 ├── event.ts       datas do evento e utilitários

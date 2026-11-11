@@ -44,6 +44,7 @@
     "address": { "@type": "PostalAddress", "streetAddress": "Vale do Anhangabaú", "addressLocality": "São Paulo", "addressRegion": "SP", "addressCountry": "BR" }
   },
   "image": ["%VITE_SITE_URL%/img/og.jpg", "%VITE_SITE_URL%/img/post-6.jpg"],
+  "performer": { "@type": "Person", "name": "Ylia" },
   "organizer": { "@type": "Organization", "name": "Vulto" }
 }
 </script>
@@ -55,7 +56,7 @@
 
 <header class="bar">
   <a class="logo" href="#topo" aria-label="MHBA, voltar ao topo">MHBA</a>
-  <a class="mono bar-cta" href="#contest">Warmup Contest</a>
+  <a class="mono bar-cta" href="#local">Como chegar</a>
 </header>
 
 <main>
@@ -142,7 +143,7 @@
           </li>
           <li class="rv now">
             <div class="yr">22.11.26</div>
-            <div><h3>MHBA, 1ª edição</h3><p>A história contada por quem a escreveu, viveu e a mantém viva.</p></div>
+            <div><h3>MHBA, 1ª edição</h3><p>A história contada por quem a escreveu, viveu e a mantém viva. A pista abre com Ylia, vencedora do Warmup Contest.</p></div>
           </li>
         </ol>
       </div>
@@ -274,63 +275,20 @@
     </div>
   </section>
 
-  <!-- CONTEST -->
+  <!-- CONTEST: resultado -->
   <section class="contest" id="contest">
     <div class="wrap contest-grid">
-      <figure class="rv zoom" style="margin:0"><img class="poster" src="img/warmup-contest.jpg" width="1024" height="1536" alt="Cartaz Warmup Contest MHBA, com uma multidão dançando e os requisitos de participação" loading="lazy"></figure>
-      <div>
-        <div class="kicker mono">Abertura da pista</div>
-        <h2 class="h2 display rv">Warmup Contest</h2>
-        <p class="lede rv" style="color:inherit">Um DJ da comunidade abre a primeira edição da MHBA. Para participar:</p>
-        <ul class="reqs">
-          <li class="rv"><span class="mono">01</span><span>Ser uma pessoa negra ou LGBTQIAPN+</span></li>
-          <li class="rv"><span class="mono">02</span><span>Morar em São Paulo</span></li>
-          <li class="rv"><span class="mono">03</span><span>Enviar um set de house de até 1 hora no SoundCloud</span></li>
-        </ul>
-        <div class="signup">
-          <button class="signup-btn" id="signupBtn" type="button" aria-expanded="false" aria-controls="formBox"><span class="signup-label">Quero me inscrever</span><span class="arr" aria-hidden="true">→</span></button>
-          <a class="note mono" href="https://docs.google.com/forms/d/e/1FAIpQLSfmlf4DYSRo0AaLMFj4Vq45fYJSczTuP17FMpRbmaprT0vc3Q/viewform" target="_blank" rel="noopener">ou abrir o formulário em outra aba ↗</a>
-        </div>
+      <div class="winner-posters">
+        <figure class="rv zoom"><img class="poster" src="img/ylia-1.jpg" width="1200" height="1600" alt="Cartaz: Ylia, vencedora do DJ Contest MHBA, de tranças, olhando por cima do ombro" loading="lazy"></figure>
+        <figure class="rv zoom"><img class="poster" src="img/ylia-2.jpg" width="1200" height="1600" alt="Cartaz: retrato de Ylia, vencedora do DJ Contest MHBA" loading="lazy"></figure>
       </div>
-    </div>
-  <div class="wrap form-box" id="formBox" hidden>
-      <form class="cform" id="contestForm" novalidate>
-        <div class="cform-head">
-          <span class="mono">Inscrição · Warmup Contest</span>
-          <h3 class="display">Manda teu set</h3>
-        </div>
-        <div class="cform-grid">
-          <label class="fld" for="f-nome"><span class="mono">Nome artístico *</span>
-            <input id="f-nome" name="nome" type="text" autocomplete="nickname" required>
-            <small data-error="nome" aria-live="polite"></small></label>
-          <label class="fld" for="f-insta"><span class="mono">Instagram *</span>
-            <input id="f-insta" name="instagram" type="text" placeholder="@seuperfil" autocomplete="off" required>
-            <small data-error="instagram" aria-live="polite"></small></label>
-          <label class="fld" for="f-whats"><span class="mono">WhatsApp *</span>
-            <input id="f-whats" name="whatsapp" type="tel" placeholder="(11) 91234-5678" autocomplete="tel" required>
-            <small data-error="whatsapp" aria-live="polite"></small></label>
-          <label class="fld" for="f-sc"><span class="mono">Link do set no SoundCloud *</span>
-            <input id="f-sc" name="soundcloud" type="url" placeholder="soundcloud.com/seu-nome/set" inputmode="url" required>
-            <small data-error="soundcloud" aria-live="polite"></small></label>
-          <fieldset class="fld seg">
-            <legend class="mono">Tem experiência com XDJ/CDJ?</legend>
-            <div class="seg-opts">
-              <label for="f-xdj-s"><input id="f-xdj-s" type="radio" name="xdj" value="Sim"><span>Sim</span></label>
-              <label for="f-xdj-n"><input id="f-xdj-n" type="radio" name="xdj" value="Não"><span>Não</span></label>
-            </div>
-          </fieldset>
-        </div>
-        <div class="cform-foot">
-          <button class="signup-btn" type="submit"><span>Enviar inscrição</span><span class="arr" aria-hidden="true">→</span></button>
-          <p class="mono cform-status" id="formStatus" aria-live="polite"></p>
-        </div>
-        <p class="cform-privacy">Seus dados são usados apenas para a seleção do Warmup Contest e para o contato sobre o resultado.</p>
-        <div class="cform-done" id="formDone" tabindex="-1" hidden>
-          <span class="mono">Recebido</span>
-          <h3 class="display">Inscrição enviada. Nos vemos na pista.</h3>
-          <p>Fica de olho no Instagram e no WhatsApp: o resultado do contest sai por lá.</p>
-        </div>
-      </form>
+      <div class="winner-info">
+        <div class="kicker mono">Warmup Contest · resultado</div>
+        <h2 class="h2 display winner-name rv">Ylia</h2>
+        <span class="mono winner-role rv">Vencedora · abre a pista da 1ª edição</span>
+        <p class="lede rv">Comunicadora, DJ e produtora musical. Nascida no interior de São Paulo e radicada na capital, encontrou na música eletrônica sua principal forma de expressão.</p>
+        <span class="closed mono">Inscrições encerradas</span>
+      </div>
     </div>
   </section>
 
@@ -346,7 +304,7 @@
       <div class="kicker mono">Save the date</div>
       <h2 class="h2 display rv">Primeira edição</h2>
       <p class="lede rv">O capítulo de uma história que deve ser contada por quem a escreveu, viveu e a mantém viva, mas teve sua versão apagada.</p>
-      <div class="venue">
+      <div class="venue" id="local">
         <figure class="rv zoom"><img class="poster" src="img/local-anhangabau.jpg" width="1200" height="1600" alt="Cartaz: Local revelado, Novo Anhangabaú. 0800 house music na rua" loading="lazy"></figure>
         <div class="venue-info">
           <div class="kicker mono">Local revelado</div>
