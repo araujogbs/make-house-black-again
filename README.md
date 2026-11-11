@@ -2,7 +2,7 @@
 
 Site da 1ª edição da **MHBA**, movimento que resgata e valoriza as raízes negras da música eletrônica, especialmente da house music. Evento em 22.11.2026, em São Paulo.
 
-**No ar:** https://makehouseblackagain.netlify.app
+**No ar:** https://makehouseblackagain.com.br
 
 ## Destaques
 
