@@ -25,6 +25,7 @@ Lighthouse (build de produção):
 - Fontes hospedadas no próprio site (sem Google Fonts), com pré-carregamento das usadas no topo.
 - Imagens com dimensões declaradas: nada "pula" enquanto a página carrega.
 - Cabeçalhos de segurança e política de conteúdo (CSP) em `public/_headers`.
+- Estatísticas de visitas com Cloudflare Web Analytics: sem cookies e sem dados pessoais.
 - Dados estruturados de evento (schema.org), Open Graph e sitemap.
 
 ## Stack
