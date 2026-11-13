@@ -26,8 +26,10 @@ export function setupVideos(): void {
       for (const e of entries) {
         const v = e.target as HTMLVideoElement;
         // play() pode ser recusado (economia de dados, modo de baixo consumo): o pôster continua lá
-        if (e.isIntersecting) void v.play().catch(() => {});
-        else v.pause();
+        // vídeo sem loop que já terminou fica no último quadro (play() reiniciaria do começo)
+        if (e.isIntersecting) {
+          if (!v.ended) void v.play().catch(() => {});
+        } else v.pause();
       }
     },
     { rootMargin: '200px 0px' },
