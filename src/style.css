@@ -407,5 +407,5 @@ footer::after { content: ""; position: absolute; inset: 0; z-index: -1; backgrou
 
 /* moldura do cartaz animado: papel colado com sombra dura */
 .venue figure.frame { padding: 10px; background: var(--paper); box-shadow: 12px 12px 0 var(--blood); transform: rotate(-1.2deg); }
-.venue figure.frame video { box-shadow: 0 0 0 1px #c9c7c2; }
+.venue figure.frame video { height: auto; box-shadow: 0 0 0 1px #c9c7c2; }
 @media (max-width: 520px) { .venue figure.frame { box-shadow: 8px 8px 0 var(--blood); margin-right: 8px; } }
